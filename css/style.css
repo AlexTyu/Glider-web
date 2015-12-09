@@ -56,29 +56,43 @@ section {
   width: 100%;
   position: relative;
   height: 100%;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 .GlobalWrapper {
   width: 100%;
   overflow: hidden;
 }
 .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-width: 850px;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .loading {
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   -webkit-backdrop-filter: blur(20px);
-  transition: 0.3s 0.3s ease;
+  -webkit-transition: 0.3s 0.3s ease;
+          transition: 0.3s 0.3s ease;
   z-index: 20;
   pointer-events: none;
 }
@@ -86,14 +100,18 @@ section {
   position: absolute;
   width: 400px;
   height: 400px;
-  transform: translate3d(47px, -175px, 0px);
+  -webkit-transform: translate3d(47px, -175px, 0px);
+          transform: translate3d(47px, -175px, 0px);
   border-radius: 500px;
 }
 .loading svg {
   stroke-dasharray: 1260;
   stroke-dashoffset: -1260;
-  transition: 0.3s ease;
-  transform: rotate(90deg) scaleX(-1);
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transform: rotate(90deg) scaleX(-1);
+      -ms-transform: rotate(90deg) scaleX(-1);
+          transform: rotate(90deg) scaleX(-1);
 }
 .loading p {
   text-align: center;
@@ -101,14 +119,19 @@ section {
   opacity: 0.3;
 }
 .loading .wait {
-  animation: wait 3s;
-  animation-fill-mode: both;
-  transition: 0.3s 0.3s ease;
+  -webkit-animation: wait 3s;
+          animation: wait 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transition: 0.3s 0.3s ease;
+          transition: 0.3s 0.3s ease;
 }
 .loading .wait.done {
   opacity: 0;
   -webkit-filter: blur(5);
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
 }
 .loading.done {
   opacity: 0;
@@ -130,9 +153,12 @@ section {
   background-position: right;
   background-size: auto 70%;
   background-repeat: no-repeat;
-  animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
-  transform: scale(1) translate3d(0px, 0px, 0px);
-  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+          animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+  -webkit-transform: scale(1) translate3d(0px, 0px, 0px);
+          transform: scale(1) translate3d(0px, 0px, 0px);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   opacity: 0;
 }
 .glider img {
@@ -176,10 +202,12 @@ section {
 }
 @-webkit-keyframes clouds {
   0% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .cloud0 {
@@ -189,10 +217,14 @@ section {
   position: absolute;
   z-index: 10;
   pointer-events: none;
-  animation: cloud 70s;
-  animation-delay: -50s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation: cloud 70s;
+          animation: cloud 70s;
+  -webkit-animation-delay: -50s;
+          animation-delay: -50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .cloud {
   top: 60vh;
@@ -201,80 +233,92 @@ section {
   position: absolute;
   z-index: 10;
   pointer-events: none;
-  animation: cloud 90s;
-  animation-delay: -20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation: cloud 90s;
+          animation: cloud 90s;
+  -webkit-animation-delay: -20s;
+          animation-delay: -20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .cloud1 {
   top: 82vh;
   left: 100vw;
   position: absolute;
   pointer-events: none;
-  animation: cloud 140s;
-  animation-delay: -60s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation: cloud 140s;
+          animation: cloud 140s;
+  -webkit-animation-delay: -60s;
+          animation-delay: -60s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .cloud3 {
   top: 70vh;
   left: 100vw;
   position: absolute;
   pointer-events: none;
-  animation: cloud 100s;
+  -webkit-animation: cloud 100s;
+          animation: cloud 100s;
   z-index: 10;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .cloud4 {
   top: 65vh;
   left: 100vw;
   position: absolute;
   pointer-events: none;
-  animation: cloud 150s;
+  -webkit-animation: cloud 150s;
+          animation: cloud 150s;
   z-index: 10;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .cloud5 {
   top: 70vh;
   left: 100vw;
   position: absolute;
   pointer-events: none;
-  animation: cloud 200s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation: cloud 200s;
+          animation: cloud 200s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 @-webkit-keyframes cloud {
   0% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
     opacity: 1;
   }
   100% {
-    transform: translateX(-2500px) translateY(-100px);
+    -webkit-transform: translateX(-2500px) translateY(-100px);
+            transform: translateX(-2500px) translateY(-100px);
     opacity: 0;
   }
 }
 #cover {
   overflow: hidden;
 }
-#cover .bg {
-  height: 100vh;
-  z-index: -1;
-  top: 0;
-  background: url("../files/cover2.jpg");
-  position: absolute;
-  background-position: top center;
-  background-size: cover, 100%;
-}
 @-webkit-keyframes content {
   0% {
     opacity: 0;
-    transform: translateX(-80px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 #cover .info {
@@ -282,17 +326,20 @@ section {
   height: 410px;
   float: right;
   position: relative;
-  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   opacity: 0;
   left: 0px;
-  animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+  -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+          animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 }
 #cover .info form {
   position: absolute;
   bottom: 0;
   width: 320px;
   border-radius: 12px;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   padding: 18px;
 }
 #cover .info form label {
@@ -311,7 +358,8 @@ section {
   width: 287px;
   outline: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.29);
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
 #cover .info form input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
@@ -338,16 +386,20 @@ section {
 }
 #cover .info .message {
   position: absolute;
-  transform: translate3d(-400px, 0px, 0px);
-  transition: 0.3s ease;
+  -webkit-transform: translate3d(-400px, 0px, 0px);
+          transform: translate3d(-400px, 0px, 0px);
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
   opacity: 0;
 }
 #cover .info .message.active {
-  transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
   opacity: 1;
 }
 #cover .info .message.gone {
-  transform: translate3d(400px, 0px, 0px);
+  -webkit-transform: translate3d(400px, 0px, 0px);
+          transform: translate3d(400px, 0px, 0px);
   opacity: 0;
 }
 #cover .info span.meet {
@@ -375,10 +427,12 @@ section {
   float: left;
   height: 60px;
   margin-right: 10px;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   color: white;
   margin-top: 400px;
-  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
@@ -393,45 +447,54 @@ section {
   width: 22px;
 }
 #cover .info .button:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   background-color: rgba(127, 243, 0, 0.65);
 }
 #cover .info .button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
   background-color: rgba(0, 0, 0, 0.1);
-}
-#cover form {
-  position: absolute;
-  bottom: 0;
-  left: 30px;
 }
 .blur {
   -webkit-filter: blur(9px);
-  transform: scale(1.2);
-  transition: 0.5s 0.3s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s 0.3s;
+          transition: 0.5s 0.3s;
 }
 .blur.done {
   -webkit-filter: blur(0px);
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 .iphone-cover {
   height: 100vh;
   width: 52vh;
   position: relative;
   z-index: 2;
-  box-sizing: border-box;
-  animation-fill-mode: both;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   opacity: 0;
-  animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+  -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
+          animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 }
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
-    transform: translateX(-50px) rotate(0deg) scale(0.9);
+    -webkit-transform: translateX(-50px) rotate(0deg) scale(0.9);
+            transform: translateX(-50px) rotate(0deg) scale(0.9);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px) rotate(3deg) scale(1);
+    -webkit-transform: translateX(0px) rotate(3deg) scale(1);
+            transform: translateX(0px) rotate(3deg) scale(1);
   }
 }
 #right {
@@ -442,7 +505,9 @@ section {
   width: 1000px;
   z-index: 1000;
   visibility: hidden;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 #right .like-icon {
   width: 100px;
@@ -460,8 +525,11 @@ section {
   font-weight: 100;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.12);
   z-index: 10;
-  transition: 0.3s ease;
-  transform: rotate(0deg) scale(0);
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transform: rotate(0deg) scale(0);
+      -ms-transform: rotate(0deg) scale(0);
+          transform: rotate(0deg) scale(0);
   background-image: url("../files/like.svg");
   background-repeat: no-repeat;
   background-size: 35px;
@@ -475,7 +543,9 @@ section {
   width: 1000px;
   visibility: hidden;
   z-index: 1000;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 #left .dislike-icon {
   width: 100px;
@@ -493,18 +563,25 @@ section {
   font-weight: 100;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.12);
   z-index: 10;
-  transition: 0.3s ease;
-  transform: rotate(0deg) scale(0);
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transform: rotate(0deg) scale(0);
+      -ms-transform: rotate(0deg) scale(0);
+          transform: rotate(0deg) scale(0);
   background-image: url("../files/dislike.svg");
   background-repeat: no-repeat;
   background-size: 35px;
   background-position: center;
 }
 #left.dislike .dislike-icon {
-  transform: rotate(-10deg) scale(1);
+  -webkit-transform: rotate(-10deg) scale(1);
+      -ms-transform: rotate(-10deg) scale(1);
+          transform: rotate(-10deg) scale(1);
 }
 #right.like .like-icon {
-  transform: rotate(-10deg) scale(1);
+  -webkit-transform: rotate(-10deg) scale(1);
+      -ms-transform: rotate(-10deg) scale(1);
+          transform: rotate(-10deg) scale(1);
 }
 .calculating {
   display: block;
@@ -520,7 +597,8 @@ section {
   margin: auto;
   color: white;
   opacity: 0;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
 .calculating.active {
   opacity: 1;
@@ -541,17 +619,20 @@ section {
 }
 @-webkit-keyframes device {
   0% {
-    transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
   }
   100% {
-    transform: translateY(50px) rotate(-5deg);
+    -webkit-transform: translateY(50px) rotate(-5deg);
+            transform: translateY(50px) rotate(-5deg);
   }
 }
 img.toolbar {
   width: 100%;
   padding: 1%;
   position: absolute;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 img.head {
   position: absolute;
@@ -563,8 +644,10 @@ img.head {
   background: transparent;
   background-size: cover;
   position: absolute;
-  box-sizing: border-box;
-  transform: perspective(10000px) scale(0.64) rotateX(-4.3deg) rotateY(45.7deg) rotateZ(-13.2deg);
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  -webkit-transform: perspective(10000px) scale(0.64) rotateX(-4.3deg) rotateY(45.7deg) rotateZ(-13.2deg);
+          transform: perspective(10000px) scale(0.64) rotateX(-4.3deg) rotateY(45.7deg) rotateZ(-13.2deg);
 }
 #simulator .menu {
   z-index: 1000;
@@ -580,7 +663,8 @@ img.head {
   top: 25px;
   right: 150px;
   opacity: 0;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
 #simulator .menu .match-button {
   position: absolute;
@@ -592,15 +676,18 @@ img.head {
   background-position: center;
   top: 25px;
   right: 0;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
 #simulator .menu.matches .match-button {
-  transform: translate3d(-167px, 0px, 0px);
+  -webkit-transform: translate3d(-167px, 0px, 0px);
+          transform: translate3d(-167px, 0px, 0px);
   opacity: 0;
 }
 #simulator .menu.matches .back-button {
   opacity: 1;
-  transform: translate3d(-150px, 0px, 0px);
+  -webkit-transform: translate3d(-150px, 0px, 0px);
+          transform: translate3d(-150px, 0px, 0px);
 }
 #simulator .card {
   width: 100%;
@@ -610,8 +697,10 @@ img.head {
   position: absolute;
   background-repeat: no-repeat;
   display: block;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.65, 0.01, 0.32, 1);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.65, 0.01, 0.32, 1);
+          transition-timing-function: cubic-bezier(0.65, 0.01, 0.32, 1);
   opacity: 1;
 }
 #simulator .card img {
@@ -619,8 +708,10 @@ img.head {
   left: 68px;
   top: 153px;
   position: absolute;
-  transition: 0.3s ease;
-  transition-delay: 1s;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 #simulator .card::before {
   content: 'card';
@@ -632,8 +723,10 @@ img.head {
   display: none;
 }
 #simulator .card.gone-match {
-  transform: translate3d(-650px, 0px, 0px);
-  transition-duration: 0.5s;
+  -webkit-transform: translate3d(-650px, 0px, 0px);
+          transform: translate3d(-650px, 0px, 0px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   opacity: 0;
 }
 #simulator .intro {
@@ -818,53 +911,63 @@ img.head {
 }
 #simulator .layer2 {
   width: 100%;
-  transform: scale(0.8) translate3d(-329px, -102px, 0px);
+  -webkit-transform: scale(0.8) translate3d(-329px, -102px, 0px);
+          transform: scale(0.8) translate3d(-329px, -102px, 0px);
   z-index: 7;
   -webkit-filter: blur(4px);
   filter: blur(2px);
   opacity: 0.5;
   pointer-events: none;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 #simulator .layer3 {
   width: 100%;
-  transform: scale(0.7) translate3d(-688px, -210px, 0px);
+  -webkit-transform: scale(0.7) translate3d(-688px, -210px, 0px);
+          transform: scale(0.7) translate3d(-688px, -210px, 0px);
   z-index: 6;
   -webkit-filter: blur(7px);
   filter: blur(7px);
   opacity: 0.2;
   pointer-events: none;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 #simulator .layer4 {
   width: 100%;
-  transform: scale(0.6) translate3d(-1048px, -319px, 0px);
+  -webkit-transform: scale(0.6) translate3d(-1048px, -319px, 0px);
+          transform: scale(0.6) translate3d(-1048px, -319px, 0px);
   z-index: 5;
   -webkit-filter: blur(10px);
   filter: blur(10px);
   opacity: 0.15 ;
   pointer-events: none;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 #simulator .layer5 {
   width: 100%;
-  transform: scale(0.4) translate3d(-1876px, -647px, 0px);
+  -webkit-transform: scale(0.4) translate3d(-1876px, -647px, 0px);
+          transform: scale(0.4) translate3d(-1876px, -647px, 0px);
   z-index: 4;
   -webkit-filter: blur(15px);
   filter: blur(15px);
   opacity: 0.1;
   pointer-events: none;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 #simulator .layer6 {
   width: 100%;
-  transform: scale(0.4) translate3d(-1876px, -647px, 0px);
+  -webkit-transform: scale(0.4) translate3d(-1876px, -647px, 0px);
+          transform: scale(0.4) translate3d(-1876px, -647px, 0px);
   z-index: 3;
   -webkit-filter: blur(15px);
   filter: blur(15px);
   opacity: 0;
   pointer-events: none;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 #simulator .layer7,
 #simulator .layer8,
@@ -883,38 +986,50 @@ img.head {
 #simulator .layer21,
 #simulator .layer22 {
   width: 100%;
-  transform: scale(0.6) translate3d(-1458px, -463px, 0px);
+  -webkit-transform: scale(0.6) translate3d(-1458px, -463px, 0px);
+          transform: scale(0.6) translate3d(-1458px, -463px, 0px);
   z-index: 3;
   -webkit-filter: blur(15px);
   filter: blur(15px);
   opacity: 0;
   display: none;
   pointer-events: none;
-  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 #simulator .out {
-  transform: scale(0.6) translate3d(-1058px, -463px, 0px);
+  -webkit-transform: scale(0.6) translate3d(-1058px, -463px, 0px);
+          transform: scale(0.6) translate3d(-1058px, -463px, 0px);
   opacity: 0;
 }
 #simulator .going-left {
-  transform: rotate(10deg);
-  transition: 0.3s transform;
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: 0.3s -webkit-transform;
+          transition: 0.3s transform;
 }
 #simulator .going-right {
-  transform: rotate(-10deg);
-  transition: 0.3s transform;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: 0.3s -webkit-transform;
+          transition: 0.3s transform;
 }
 #simulator .card.gone-right {
-  transform: rotate(-20deg) translate3d(350px, 30px, 0px);
+  -webkit-transform: rotate(-20deg) translate3d(350px, 30px, 0px);
+          transform: rotate(-20deg) translate3d(350px, 30px, 0px);
   opacity: 0;
 }
 #simulator .card.gone-left {
-  transform: rotate(20deg) translate3d(-350px, 30px, 0px);
+  -webkit-transform: rotate(20deg) translate3d(-350px, 30px, 0px);
+          transform: rotate(20deg) translate3d(-350px, 30px, 0px);
   opacity: 0;
 }
 #simulator .layerLikeDrag {
   width: 100%;
-  transform: scale(1) rotate(-5deg) translate3d(100px, 30px, 0px);
+  -webkit-transform: scale(1) rotate(-5deg) translate3d(100px, 30px, 0px);
+          transform: scale(1) rotate(-5deg) translate3d(100px, 30px, 0px);
   z-index: 3;
   -webkit-filter: blur(0px);
   filter: blur(0px);
@@ -922,7 +1037,8 @@ img.head {
 }
 #simulator .layerLike {
   width: 100%;
-  transform: scale(1) rotate(-15deg) translate3d(500px, 92px, 0px);
+  -webkit-transform: scale(1) rotate(-15deg) translate3d(500px, 92px, 0px);
+          transform: scale(1) rotate(-15deg) translate3d(500px, 92px, 0px);
   z-index: 3;
   -webkit-filter: blur(0px);
   filter: blur(0px);
@@ -930,14 +1046,16 @@ img.head {
 }
 #simulator .layerDislike {
   width: 100%;
-  transform: scale(1) rotate(15deg) translate3d(-500px, 92px, 0px);
+  -webkit-transform: scale(1) rotate(15deg) translate3d(-500px, 92px, 0px);
+          transform: scale(1) rotate(15deg) translate3d(-500px, 92px, 0px);
   z-index: 3;
   -webkit-filter: blur(0px);
   filter: blur(0px);
   opacity: 0;
 }
 #simulator .activeDecision {
-  transform: scale(1) translate3d(20px, 0px, 0px) !important;
+  -webkit-transform: scale(1) translate3d(20px, 0px, 0px) !important;
+          transform: scale(1) translate3d(20px, 0px, 0px) !important;
   opacity: 1 !important;
   box-shadow: -17px 0px 56px rgba(0, 0, 0, 0.4);
 }
@@ -956,12 +1074,15 @@ img.head {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.3s ease;
-  transform: translate3d(320px, 0px, 0px);
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transform: translate3d(320px, 0px, 0px);
+          transform: translate3d(320px, 0px, 0px);
 }
 .matches-screen.active {
   background-color: rgba(0, 0, 0, 0.23);
-  transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
 }
 .screenwrapper {
   position: absolute;
@@ -976,10 +1097,14 @@ img.head {
   height: 100%;
   position: relative;
   left: 0;
-  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
   opacity: 0;
-  transition: 0.3s ease;
-  transition-delay: 1s;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .gotmatch .userpic {
   width: 120px;
@@ -1026,20 +1151,27 @@ img.head {
   background-color: rgba(255, 255, 255, 0.44);
   margin: auto;
   margin-bottom: 12px;
-  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
+          transition: 0.1s ease;
 }
 .gotmatch .button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
   background-color: rgba(255, 255, 255, 0.1);
 }
 .gotmatch.active {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.78);
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .container {
-    transform: scale(0.85) translateX(-150px) translateY(-20px);
+    -webkit-transform: scale(0.85) translateX(-150px) translateY(-20px);
+        -ms-transform: scale(0.85) translateX(-150px) translateY(-20px);
+            transform: scale(0.85) translateX(-150px) translateY(-20px);
     min-width: 900px;
   }
   .info {
