@@ -1,0 +1,37 @@
+include ./includes/head.jade
+
+body
+
+	.loading
+		.wait
+			.loader
+				//svg(height="400" width="400")
+					//circle(cx="200" cy="200" r="200" stroke="white" fill='none')
+					
+			h1 One moment
+			p It's loading...
+	.blur
+		section#cover
+			.glider#top
+				img(src="files/name.svg")
+					
+			.bg
+			.clouds
+				img.cloud0(src="files/cloud.png")
+				img.cloud(src="files/cloud.png")
+				img.cloud1(src="files/cloud1.png")
+				img.cloud3(src="files/cloud3.png")
+				img.cloud4(src="files/cloud4.png")
+				img.cloud5(src="files/cloud5.png")
+		
+			.container						
+
+				.iphone-cover
+					include ./includes/simulator-top.jade
+					
+				.info
+					include ./includes/messages.jade
+					form(method='post', name='tasktitleform', action='')
+						label Leave your email to stay informed
+						input#email.email(name='email', placeholder='Enter Email to get invited' type='email', onfocus="", onblur="" autofocus)  
+						input.save(type='button')
