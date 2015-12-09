@@ -6,6 +6,7 @@ body{
   overflow-x: hidden;
 	background: #000E21;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @import (less) "/fonts.less";
@@ -104,7 +105,7 @@ section{
   animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
   transform: scale(1) translate3d(0px, 0px, 0px);
   animation-fill-mode: both;
-  opacity: 0;
+
 
   img{
     height: 16px;
@@ -153,7 +154,8 @@ section{
 	position: absolute;
 	z-index: 10;
 	pointer-events: none;
-	animation: cloud 70s;
+	animation-name: cloud;
+	animation-duration: 70s;
 	animation-delay: -50s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -244,7 +246,6 @@ section{
 		//overflow: hidden;
 		position: relative;
 		animation-delay: 0s;
-		opacity: 0;
 		left: 0px;
 		animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 
@@ -394,7 +395,6 @@ section{
 	z-index: 2;
 	box-sizing: border-box;
   animation-fill-mode: both;
-  opacity: 0;
   animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 }
 

@@ -97,11 +97,11 @@ $(document).on('ready', function(){
    $('.loading').addClass('done');
    $('.wait').addClass('done');
    $('.blur').addClass('done');
-   $('.iphone-cover').css('animation', 'slide 1s 0.6s').css('animation-fill-mode', 'both');
-   $('.info').css('animation', 'content 1s 0.3s').css('animation-fill-mode', 'both');
-   $('.clouds').css('animation', 'clouds 2s').css('animation-fill-mode', 'both');
-   $('.glider').css('animation', 'logo 1s 1s').css('animation-fill-mode', 'both');
-   $('.glider img').css('animation', 'name 1s 1.1s').css('animation-fill-mode', 'both');
+   $('.iphone-cover').css('-webkit-animation-name', 'slide').css('-webkit-animation-duration', '1s').css('-webkit-animation-delay','0.6s').css('-webkit-animation-fill-mode', 'both');
+   $('.info').css('-webkit-animation', 'content 1s 0.3s').css('-webkit-animation-fill-mode', 'both');
+   $('.clouds').css('-webkit-animation', 'clouds 2s').css('-webkit-animation-fill-mode', 'both');
+   $('.glider').css('-webkit-animation', 'logo 1s 1s').css('-webkit-animation-fill-mode', 'both');
+   $('.glider img').css('-webkit-animation', 'name 1s 1.1s').css('-webkit-animation-fill-mode', 'both');
    setTimeout(function(){
     $('#simulator .card').removeClass('out');
  }, 300);

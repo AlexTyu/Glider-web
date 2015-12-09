@@ -6,17 +6,12 @@ body {
   overflow-x: hidden;
   background: #000E21;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @font-face {
   font-family: "San Francisco";
   font-weight: 100;
   src: url("../files/fonts/SF-Compact-Display-Ultralight.otf");
-}
-/** Thin */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 300;
-  src: url("../files/fonts/SF-Compact-Display-Light.otf");
 }
 h1 {
   color: white;
@@ -159,7 +154,6 @@ section {
           transform: scale(1) translate3d(0px, 0px, 0px);
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  opacity: 0;
 }
 .glider img {
   height: 16px;
@@ -217,8 +211,10 @@ section {
   position: absolute;
   z-index: 10;
   pointer-events: none;
-  -webkit-animation: cloud 70s;
-          animation: cloud 70s;
+  -webkit-animation-name: cloud;
+          animation-name: cloud;
+  -webkit-animation-duration: 70s;
+          animation-duration: 70s;
   -webkit-animation-delay: -50s;
           animation-delay: -50s;
   -webkit-animation-iteration-count: infinite;
@@ -328,7 +324,6 @@ section {
   position: relative;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  opacity: 0;
   left: 0px;
   -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
           animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
@@ -481,7 +476,6 @@ section {
        box-sizing: border-box;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  opacity: 0;
   -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
           animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 }
