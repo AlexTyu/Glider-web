@@ -11,7 +11,7 @@ body {
 @font-face {
   font-family: "San Francisco";
   font-weight: 100;
-  src: url("../files/fonts/SF-Compact-Display-Ultralight.otf");
+  src: url("../files/fonts/sf-compact-display-ultralight-webfont.ttf");
 }
 h1 {
   color: white;
@@ -336,6 +336,7 @@ section {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   padding: 18px;
+  left: 11px;
 }
 #cover .info form label {
   display: none;
