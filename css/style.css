@@ -324,7 +324,7 @@ section {
   position: relative;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  left: 0px;
+  left: -50px;
   -webkit-animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
           animation-timing-function: cubic-bezier(0.29, 0.96, 0.5, 1.02);
 }

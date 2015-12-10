@@ -107,7 +107,17 @@ $(document).on('ready', function(){
  }, 300);
  });
 
- //$( document ).on( "mousemove", function( event ) {
-   //$('.bg').css('transform', 'translate3d('+ event.pageX / 40 + "px, " + event.pageY / 100 + "px, 0px");
-   //$('.clouds').css('transform', 'translate3d('+ event.pageX / 10 + "px, " + event.pageY / 10 + "px, 0px");
-//});
+ $( document ).on( "mousemove", function( event ) {
+   $('.parallax-0').css('transform', 'translate3d(0px,0px,0px)');
+   $('.parallax-1').css('transform', 'translate3d(-'+ event.pageX / 90 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-2').css('transform', 'translate3d(-'+ event.pageX / 45 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-3').css('transform', 'translate3d(-'+ event.pageX / 30 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-4').css('transform', 'translate3d(-'+ event.pageX / 10 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-5').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-6').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-7').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-8').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-9').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-10').css('transform', 'translate3d(-'+ event.pageX / 30 + "px, -" + event.pageY / 90 + "px, 0px");
+
+});
