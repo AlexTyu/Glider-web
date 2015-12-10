@@ -110,7 +110,7 @@ $(document).on('ready', function(){
  $( document ).on( "mousemove", function( event ) {
    $('.parallax-0').css('transform', 'translate3d(0px,0px,0px)');
    $('.parallax-1').css('transform', 'translate3d(-'+ event.pageX / 90 + "px, -" + event.pageY / 90 + "px, 0px");
-   $('.parallax-2').css('transform', 'translate3d(-'+ event.pageX / 45 + "px, -" + event.pageY / 90 + "px, 0px");
+   $('.parallax-2').css('transform', 'translate3d(-'+ event.pageX / 70 + "px, -" + event.pageY / 90 + "px, 0px");
    $('.parallax-3').css('transform', 'translate3d(-'+ event.pageX / 30 + "px, -" + event.pageY / 90 + "px, 0px");
    $('.parallax-4').css('transform', 'translate3d(-'+ event.pageX / 10 + "px, -" + event.pageY / 90 + "px, 0px");
    $('.parallax-5').css('transform', 'translate3d(-'+ event.pageX / 5 + "px, -" + event.pageY / 90 + "px, 0px");
