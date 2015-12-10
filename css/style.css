@@ -11,7 +11,7 @@ body {
 @font-face {
   font-family: "San Francisco";
   font-weight: 100;
-  src: url("../files/fonts/sf-compact-display-ultralight-webfont.ttf");
+  src: url("../files/fonts/sf-compact-display-ultralight-webfont.woff");
 }
 h1 {
   color: white;
